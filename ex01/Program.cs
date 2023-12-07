@@ -51,7 +51,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-app.UseErrorHandlingMiddleware();
+//app.UseErrorHandlingMiddleware();//שמתי בהערה כי זה מאט נורא את הביצועים
 app.UseRatingMiddleware();
 
 app.MapControllers();
